@@ -1,0 +1,165 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+html, body {
+  margin: 0.4em;
+  padding: 0;
+  font-family : Helvetica, sans-serif;
+}
+
+ul, label, input {
+  margin: 0;
+  padding: 0;
+}
+
+/*Navigation Bar*/
+.nav-wrapper {
+  position: relative;
+  background-color : #FFB4B0;
+  border: 0.2em solid #222222;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+.nav-wrapper ul li {
+  display: inline-block;
+  text-tranform: uppercase;
+  padding: 0.5em;
+  border-right: 0.15em solid #222222;
+}
+.nav-wrapper ul li:last-child {
+  border-right: none;
+}
+.active {
+  text-decoration: none;
+  color: #222222;
+}
+/*End of Navigation bar*/
+
+/*Main Content*/
+.container {
+  display: flex;
+}
+
+.side-bar {
+  background-color: #4DD7FA;
+  border: 0.2em solid #222222;
+  padding: 1em;
+  width: 20%;
+}
+/*End of Main Content*/
+
+/*Form elements*/
+.form-group {
+  margin-bottom: 1.75em;
+}
+.form-group input {
+  margin: 0.5em 0;
+}
+
+
+/*Slider Input Style*/
+input[type=range] {
+  -webkit-appearance: none;
+  border: 0.2em solid #222222;
+  border-radius: 1em;
+  height: 0.6em;
+  width: 100%;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 0.2em solid #222222;
+  background-color: lightgray;
+  border-radius: 50%;
+  height: 1.5em;
+  width: 1.5em;
+}
+input[type=range]::-moz-range-progress {
+  background-color: lightgray;
+}
+/*End of Slider Input Style*/
+
+/*Option Input Style*/
+select {
+  width: 100%;
+  border: 0.2em solid #222222;
+  padding: 0.05em;
+  margin: 0.3em 0;
+}
+/*End of Option Input Style*/
+
+/*Checkbox Style*/
+.genre-container {
+  margin-top: 0.4em;
+  margin-bottom: 0.5em;
+  float: left;
+  width: 100%;
+}
+.genre-section {
+  float: left;
+  width: 50%;
+}
+.genre-item input, label {
+  margin: 0;
+  padding: 0;
+  font-size: .75em;
+}
+.genre-item {
+  margin-bottom: 0.5em;
+}
+
+input[type=checkbox]:not(:checked) {
+  -webkit-appearance: none;
+  cursor: pointer;
+  border: 0.2em solid #222222;
+  height: 1.5em;
+  width: 1.5em;
+  background-color: #ffffff;
+  border-radius: 0.4em;
+}
+
+input[type=checkbox]:checked::after {
+  -webkit-appearance: none;
+  border: 0.2em solid #222222;
+  height: 1.5em;
+  width: 1.5em;
+  background-color: #ffffff;
+  border-radius: 0.4em;
+  display: inline-block;
+  content: '\2713';
+  text-align: center;
+  line-height: 1.5em;
+}
+/*End of Checkbox Style*/
+/*Form Button Submit*/
+input[type=submit] {
+  -webkit-appearance: none;
+  border: 0.2em solid #222222;
+  width: 100%;
+  cursor: pointer;;
+  color: #222222;
+  background-color: buttonface;
+  box-sizing: border-box;
+  padding: 0.5em 0;
+  font-size: 1em;
+}
+/*End of Button Submit*/
+/*End of form elements*/
+
+
+/*Main Content*/
+.main-content {
+  background-color: #FEFAC0;
+  border: 0.2em solid #222222;
+  padding: 0 1em;
+  width: 80%;
+  margin-left: 1em;
+}
+.song-item h1 {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.main-content ul li {
+  list-style: none;
+}
+
+/*End of Main Content*/

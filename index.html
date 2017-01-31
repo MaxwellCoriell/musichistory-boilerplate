@@ -1,13 +1,120 @@
 <!doctype html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
   <title>Music History</title>
 </head>
 
 <body>
+  <nav class="nav-wrapper">
+    <ul class="navbar">
+      <li><a href="#" class="active">View Music</a></li>
+      <li><a href="#">Add Music</a></li>
+      <li><a href="#">Profile</a></li>
+    </ul>
+  </nav>
 
+  <div class="container">
+    <!-- Side Bar -->
+    <section class="side-bar">
+      <div class="form-group">
+        <label for="song-length">Song Length:</label>
+        <input class="song-length" type="range" name="song-length" value="" maxlength="100">
+      </div>
+
+      <div class="form-group">
+        <label for="artist-list">Artist:</label>
+        <select class="" name="artist">
+          <option value="Option 1">Option 1</option>
+          <option value="Option 2">Option 2</option>
+          <option value="Option 3">Option 3</option>
+          <option value="Option 4">Option 4</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="album-list">Album:</label>
+        <select class="" name="album">
+          <option value="Option 1">Option 1</option>
+          <option value="Option 2">Option 2</option>
+          <option value="Option 3">Option 3</option>
+          <option value="Option 4">Option 4</option>
+        </select>
+      </div>
+
+      <div class="form-group genre-list">
+        <label for="genre">Genre:</label>
+        <div class="genre-container">
+          <!-- Section 1 Genre List -->
+          <div class="genre-section">
+            <div class="genre-item">
+              <input type="checkbox" name="rock" value="Rock">
+              <label for="rock">Rock</label>
+            </div>
+            <div class="genre-item">
+              <input type="checkbox" name="classical" value="Classical">
+              <label for="classical">Classical</label>
+            </div>
+            <div class="genre-item">
+              <input type="checkbox" name="pop" value="Pop">
+              <label for="pop">Pop</label>
+            </div>
+          </div>
+          <!-- End of Section 1 Genre List -->
+
+          <!-- Section 2 Genre List -->
+          <div class="genre-section">
+            <div class="genre-item">
+              <input type="checkbox" name="jazz" value="jazz">
+              <label for="jazz">Jazz</label>
+            </div>
+            <div class="genre-item">
+              <input type="checkbox" name="blues" value="blues">
+              <label for="blues">Blues</label>
+            </div>
+            <div class="genre-item">
+              <input type="checkbox" name="hiphop" value="hiphop">
+              <label for="hiphop">Hip Hop</label>
+            </div>
+          </div>
+          <!-- End of Section 2 Genre List -->
+
+        </div>
+      </div>
+
+      <div class="submit-genre">
+        <input class="submit-genre" type="submit" value="Submit">
+      </div>
+    </section> <!-- End of Side Bar -->
+
+    <section class="main-content">
+      <div class="song-list">
+        <ul class="song-item">
+          <h1>Song Name</h1>
+          <li><p>Artist name &nbsp| Album name &nbsp|&nbsp Genre</p></li>
+        </ul>
+      </div>
+      <div class="song-list">
+        <ul class="song-item">
+          <h1>Song Name</h1>
+          <li><p>Artist name &nbsp| Album name &nbsp|&nbsp Genre</p></li>
+        </ul>
+      </div>
+      <div class="song-list">
+        <ul class="song-item">
+          <h1>Song Name</h1>
+          <li><p>Artist name &nbsp| Album name &nbsp|&nbsp Genre</p></li>
+        </ul>
+      </div>
+      <div class="song-list">
+        <ul class="song-item">
+          <h1>Song Name</h1>
+          <li><p>Artist name &nbsp| Album name &nbsp|&nbsp Genre</p></li>
+        </ul>
+      </div>
+    </section>
+  </div>
 
 </body>
 </html>
